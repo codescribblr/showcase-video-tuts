@@ -6,7 +6,6 @@ Tags: videos, youtube, tutorials, tuts
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: 1.1
-~Current Version:1.1~
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,3 +40,10 @@ No Screenshots Yet. Coming Soon.
 
 = 1.0 =
 * Initial Stable Release
+
+Current Version
+===============
+
+The line below is used for the updater API, please leave it untouched unless bumping the version up :)
+
+~Current Version:1.1~
