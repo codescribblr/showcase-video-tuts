@@ -116,8 +116,7 @@ function showcase_vt_scripts_and_styles(){
  * GITHUB HOSTING AND UPDATER
  * --------------------------------------------------------------- */
 
-require_once(SHOWCASE_VT_INCLUDE_PATH.'updater.php');
-define( 'WP_GITHUB_FORCE_UPDATE', true );
+require_once(SHOWCASE_VT_INCLUDE_PATH.'updater.php');   
 if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
     $config = array(
         'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
