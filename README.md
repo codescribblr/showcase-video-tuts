@@ -1,14 +1,14 @@
 === Showcase Video Tuts ===
 ===========================
 
-Contributors: jrwdev
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EPD25LMXF4A4E
-Tags: videos, youtube, tutorials, tuts
-Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 1.2
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Contributors: codescribblr
+* Donate link: https://pledgie.com/campaigns/24458
+* Tags: videos, youtube, tutorials, tuts
+* Requires at least: 3.5
+* Tested up to: 3.8.1
+* Stable tag: 1.2
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds an options page in which you can add video tutorials from youtube or vimeo directly to the dashboard. It requires the advanced custom fields plugin to operate correctly.
 
@@ -16,6 +16,8 @@ Adds an options page in which you can add video tutorials from youtube or vimeo 
 =================
 
 This plugin adds an options page in which you can add video tutorials from youtube or vimeo directly to the dashboard. It requires the <a href="http://wordpress.org/extend/plugins/advanced-custom-fields/">advanced custom fields plugin</a> (by Elliot Condon v3.0 or later) to operate correctly.
+
+<a href='https://pledgie.com/campaigns/24458'><img alt='Click here to lend your support to: Showcase Video Tutorials Plugin and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/24458.png?skin_name=chrome' border='0' ></a>
 
 == Installation ==
 ==================
