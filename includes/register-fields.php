@@ -56,6 +56,16 @@ if(function_exists("register_field_group")) {
                         'maxlength' => '',
                     ),
                     array (
+                        'key' => 'field_25',
+                        'label' => 'Video Description',
+                        'name' => 'showcase_vt_video_desc',
+                        'type' => 'wysiwyg',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'toolbar' => 'full',
+                        'media_upload' => 'no',
+                    ),
+                    array (
                         'key' => 'field_52d068661594d',
                         'label' => 'Video URL',
                         'name' => 'showcase_vt_video_url',
