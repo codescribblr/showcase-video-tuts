@@ -6,7 +6,7 @@
 * Tags: videos, youtube, tutorials, tuts
 * Requires at least: 3.5
 * Tested up to: 3.8.1
-* Stable tag: 1.2
+* Stable tag: 1.3
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ No Screenshots Yet. Coming Soon.
 == Changelog ==
 ===============
 
+###= 1.3 =
+* Modified layout to use rows instead of table format for adding videos
+
 ###= 1.2 =
 * Added a new description field for each video tutorial
 * Modified the secondary options page to work without theme modification (using 'after_theme_setup' filter)
@@ -58,4 +61,4 @@ Current Version
 
 The line below is used for the updater API, please leave it untouched unless bumping the version up :)
 
-~Current Version:1.2~
+~Current Version:1.3~
