@@ -24,9 +24,10 @@ This plugin adds an options page in which you can add video tutorials from youtu
 
 1. Install (if not already installed) advanced custom fields plugin by Elliot Condon
 2. Install (if not already installed) advanced custom fields - Options plugin by Elliot Condon
-3. Upload `showcase-video-tuts` folder to the `/wp-content/plugins/` directory
-4. Activate the plugin through the 'Plugins' menu in WordPress
-5. Add videos to your dashboard via the plugin settings page
+3. Install (if not already installed) advanced custom fields - Repeater Field plugin by Elliot Condon
+4. Upload `showcase-video-tuts` folder to the `/wp-content/plugins/` directory
+5. Activate the plugin through the 'Plugins' menu in WordPress
+6. Add videos to your dashboard via the plugin settings page
 
 == Frequently Asked Questions ==
 ================================
