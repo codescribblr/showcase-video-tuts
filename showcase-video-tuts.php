@@ -33,6 +33,25 @@ function showcase_vt_setup_options_page_settings( $settings ) {
     return $settings;
 }
 
+if( function_exists('acf_add_options_page') ) {
+ 
+    acf_add_options_page(array(
+        'page_title'    => 'Site Options',
+        'menu_title'    => 'Site Options',
+        'menu_slug'     => 'acf-options-site-options',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+ 
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Video Tuts Settings',
+        'menu_title'    => 'Video Tuts Settings',
+        'menu_slug'     => 'acf-options-video-tuts-settings',
+        'parent_slug'   => 'acf-options-site-options',
+    ));
+ 
+}
+
 /* ------------------------------------------------------------------
  * CREATE SUBMENU LINK ON PLUGINS PAGE
  * --------------------------------------------------------------- */
