@@ -5,11 +5,11 @@ Plugin Name: Showcase Video Tuts
 Plugin URI: https://github.com/codescribblr/showcase-video-tuts
 Description: This plugin adds an options page in which you can add video tutorials from youtube or vimeo directly to the dashboard. It requires the advanced custom fields plugin to operate correctly.
 Author: Codescribblr
-Version: 1.3
+Version: 1.4
 Author URI: http://codescribblr.com/
 */
 
-define('SHOWCASE_VIDEOTUTS_VERSION', '1.3');
+define('SHOWCASE_VIDEOTUTS_VERSION', '1.4');
 define('DS', DIRECTORY_SEPARATOR);
 define('SHOWCASE_VT_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 define('SHOWCASE_VT_PLUGIN_DIR', dirname( __FILE__ ));

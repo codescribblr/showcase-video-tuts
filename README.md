@@ -5,8 +5,8 @@
 * Donate link: https://pledgie.com/campaigns/24458
 * Tags: videos, youtube, tutorials, tuts
 * Requires at least: 3.5
-* Tested up to: 3.8.1
-* Stable tag: 1.3
+* Tested up to: 3.9.1
+* Stable tag: 1.4
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ No Screenshots Yet. Coming Soon.
 == Changelog ==
 ===============
 
+###= 1.4 =
+* Changed ACF Options Page settings to be compatible with ACF 5.0
+
 ###= 1.3 =
 * Modified layout to use rows instead of table format for adding videos
 
@@ -62,4 +65,4 @@ Current Version
 
 The line below is used for the updater API, please leave it untouched unless bumping the version up :)
 
-~Current Version:1.3~
+~Current Version:1.4~
