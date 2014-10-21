@@ -5,11 +5,11 @@ Plugin Name: Showcase Video Tuts
 Plugin URI: https://github.com/codescribblr/showcase-video-tuts
 Description: This plugin adds an options page in which you can add video tutorials from youtube or vimeo directly to the dashboard. It requires the advanced custom fields plugin to operate correctly.
 Author: Codescribblr
-Version: 1.4
+Version: 1.5
 Author URI: http://codescribblr.com/
 */
 
-define('SHOWCASE_VIDEOTUTS_VERSION', '1.4');
+define('SHOWCASE_VIDEOTUTS_VERSION', '1.5');
 define('DS', DIRECTORY_SEPARATOR);
 define('SHOWCASE_VT_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 define('SHOWCASE_VT_PLUGIN_DIR', dirname( __FILE__ ));
@@ -96,17 +96,20 @@ function showcase_vt_custom_dashboard_help() {
 
     $video_tutorials = get_field('showcase_vt_video_tutorials', 'options');
     
-    
-    foreach($video_tutorials as $vt):
+    if($video_tutorials):
+        foreach($video_tutorials as $vt):
 
-        $embed_link = showcase_vt_video_link($vt['showcase_vt_video_url']);
+            $embed_link = showcase_vt_video_link($vt['showcase_vt_video_url']);
 
-        echo '<h3>'.$vt['showcase_vt_video_title'].'</h3>';
-        echo ($vt['showcase_vt_video_desc']) ? $vt['showcase_vt_video_desc'] : '';
-        echo '<p class="video" style="max-width:100%"><iframe style="max-width:100%" width="640" height="480" src="'.$embed_link.'" frameborder="0" allowfullscreen></iframe></p>';
-        echo '<p><a target="_blank" href="'.$vt['showcase_vt_video_url'].'">'.$vt['showcase_vt_video_title'].'</a></p>';
+            echo '<h3>'.$vt['showcase_vt_video_title'].'</h3>';
+            echo ($vt['showcase_vt_video_desc']) ? $vt['showcase_vt_video_desc'] : '';
+            echo '<p class="video" style="max-width:100%"><iframe style="max-width:100%" width="640" height="480" src="'.$embed_link.'" frameborder="0" allowfullscreen></iframe></p>';
+            echo '<p><a target="_blank" href="'.$vt['showcase_vt_video_url'].'">'.$vt['showcase_vt_video_title'].'</a></p>';
 
-    endforeach;
+        endforeach;
+    else:
+        echo '<p>No tutorial videos yet. Check back soon!';
+    endif;
 
 }
 
