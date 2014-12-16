@@ -5,11 +5,11 @@ Plugin Name: Showcase Video Tuts
 Plugin URI: https://github.com/codescribblr/showcase-video-tuts
 Description: This plugin adds an options page in which you can add video tutorials from youtube or vimeo directly to the dashboard. It requires the advanced custom fields plugin to operate correctly.
 Author: Codescribblr
-Version: 1.5
+Version: 1.6
 Author URI: http://codescribblr.com/
 */
 
-define('SHOWCASE_VIDEOTUTS_VERSION', '1.5');
+define('SHOWCASE_VIDEOTUTS_VERSION', '1.6');
 define('DS', DIRECTORY_SEPARATOR);
 define('SHOWCASE_VT_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 define('SHOWCASE_VT_PLUGIN_DIR', dirname( __FILE__ ));
@@ -87,7 +87,9 @@ add_filter('plugin_action_links', 'showcase_vt_plugin_action_links', 10, 2);
 add_action('wp_dashboard_setup', 'showcase_vt_custom_dashboard_widgets');
 function showcase_vt_custom_dashboard_widgets() {
     global $wp_meta_boxes;
-    wp_add_dashboard_widget('custom_help_widget', 'Video Walk-through & Support', 'showcase_vt_custom_dashboard_help');
+    if(current_user_can('manage_options')){
+        wp_add_dashboard_widget('custom_help_widget', 'Video Walk-through & Support', 'showcase_vt_custom_dashboard_help');
+    }
 }
 
 function showcase_vt_custom_dashboard_help() {
@@ -157,7 +159,7 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
         'zip_url' => 'https://github.com/codescribblr/showcase-video-tuts/zipball/master', // the zip url of the github repo
         'sslverify' => true, // wether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
         'requires' => '3.5', // which version of WordPress does your plugin require?
-        'tested' => '3.8.1', // which version of WordPress is your plugin tested up to?
+        'tested' => '4.0.1', // which version of WordPress is your plugin tested up to?
         'readme' => 'README.md', // which file to use as the readme for the version number
         'access_token' => '', // Access private repositories by authorizing under Appearance > Github Updates when this example plugin is installed
     );

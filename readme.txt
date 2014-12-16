@@ -2,6 +2,9 @@
 
 == Changelog ==
 
+= 1.6 =
+* Removed dashboard widget for non-admins
+
 = 1.5 =
 * Fixed PHP Notice
 * Added default text if no videos present
